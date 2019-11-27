@@ -1,7 +1,6 @@
 var http = require("http");
 
 
-
 var middlewares = [
   function fun1(req, res, next) {
     parseBody(req, function(err, body) {
@@ -44,7 +43,6 @@ function requestHandler(req, res) {
       return;
     }
   }
-
   //触发第一个middleware
   next();
 }
